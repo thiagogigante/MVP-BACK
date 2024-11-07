@@ -6,18 +6,12 @@ const UserSchema = new mongoose.Schema({
     password: { type: String, required: true }, // hashed password
     role: {
         type: String,
-        enum: ["student", "teacher", "admin", "citizen"],
+        enum: ["student", "teacher", "admin"],
         required: true,
-    },
-    phoneNumber: { type: String },
-    profileDetails: {
-        profession: { type: String }, // e.g., only for students and teachers
-        course: { type: String }, // specific to students, if needed
-        specialization: { type: String }, // specific to teachers
     },
     createdAt: { type: Date, default: Date.now },
 });
 
-const User = mongoose.model("User", UserSchema);
+const User = mongoose.model("Users", UserSchema);
 
 export default User;

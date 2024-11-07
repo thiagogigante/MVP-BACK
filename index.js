@@ -1,6 +1,6 @@
 // import path from "path";
 import mongoose from "mongoose";
-import apiRoute from "./src/routes/api.js";
+import apiRoute from "./src/routes/index.js";
 import express from "express";
 const app = express();
 
@@ -14,8 +14,9 @@ db.once("open", () => {
     console.log("Connected to MongoDB");
 });
 
-app.use("/api", apiRoute);
+app.use(express.json());
+app.use("/", apiRoute);
 
-app.listen(3333, () => {
+app.listen(3000, () => {
     console.log("Server is running");
 });
