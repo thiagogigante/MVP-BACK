@@ -1,8 +1,10 @@
 // import path from "path";
+import "dotenv/config";
 import mongoose from "mongoose";
 import apiRoute from "./src/routes/index.js";
 import express from "express";
 const app = express();
+// console.log(process.env.JWT_SECRET);
 
 mongoose.connect(
     "mongodb+srv://brunonunes72:seEnurx9hH4qNCZ1@cluster0.yridb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"

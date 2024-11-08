@@ -1,29 +1,19 @@
-import { query, Router } from "express";
-import Appointment from "../models/Appointment.js";
+import { Router } from "express";
+import authController from "../controllers/authController.js";
+import appointmentController from "../controllers/appointmentController.js";
 
 const router = Router();
 
-router.get("/", async (req, res) => {
-    try {
-        const appointments = await Appointment.find({});
+router.get(
+    "/",
+    authController.verifyToken,
+    appointmentController.getAppointment
+);
 
-        res.send(JSON.stringify(appointments));
-    } catch (err) {
-        res.send(err);
-    }
-});
-
-router.post("/new", async (req, res) => {
-    try {
-        const { body } = req;
-
-        const appointment = new Appointment(body);
-        await appointment.save();
-
-        res.send(JSON.stringify(body));
-    } catch (err) {
-        res.send(err);
-    }
-});
+router.post(
+    "/new",
+    authController.verifyToken,
+    appointmentController.newAppointment
+);
 
 export default router;
