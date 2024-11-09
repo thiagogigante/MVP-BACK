@@ -1,4 +1,8 @@
 import User from "../models/User.js";
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+
+const saltRounds = 10;
 
 async function getUsers(req, res) {
     try {
@@ -11,16 +15,33 @@ async function getUsers(req, res) {
 }
 
 async function registerUser(req, res) {
+    const SECRET = process.env.JWT_SECRET;
     try {
-        const { body } = req;
+        const { email, password } = req.body;
 
-        const user = new User(body);
-        console.log(user);
+        if (!email || !password) {
+            return res
+                .status(400)
+                .json({ message: "E-mail e Senha são necessários!" });
+        }
+
+        const hashedPassword = await bcrypt.hash(password, saltRounds);
+
+        const user = new User({ ...req.body, password: hashedPassword });
+        // console.log(user);
         await user.save();
 
-        res.send(JSON.stringify(body));
+        const userDataToEncode = {
+            name: user.name,
+            email: user.email,
+            role: user.role,
+        };
+
+        const code = jwt.sign(userDataToEncode, SECRET);
+
+        res.status(200).send(JSON.stringify(code));
     } catch (err) {
-        res.send(err);
+        res.status(500).send(err.message);
     }
 }
 

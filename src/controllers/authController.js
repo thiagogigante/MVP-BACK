@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
+import bcrypt from "bcrypt"
 
 async function login(req, res) {
     const SECRET = process.env.JWT_SECRET;
@@ -10,8 +11,10 @@ async function login(req, res) {
         if (!user) {
             throw new Error("Usuário não encontrado!");
         }
-        if (user.password !== password) {
-            throw new Error("Usuário ou senha inválidos.");
+        
+        const isMatch = await bcrypt.compare(password, user.password);
+        if (!isMatch) {
+            return res.status(401).json({ message: 'E-mail ou senha inválidos!' });
         }
 
         const userDataToEncode = {
@@ -22,6 +25,7 @@ async function login(req, res) {
 
         const code = jwt.sign(userDataToEncode, SECRET);
 
+       
         res.status(200).send(JSON.stringify(code));
     } catch (err) {
         res.status(401).send(err.message);
