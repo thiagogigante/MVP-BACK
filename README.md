@@ -1,7 +1,25 @@
 # MVP-BACK
 TRABALHO DA FACULDADE
 
-## FERRAMENTAS NECESSÁRIAS
+# Equipe
+  Bruno Nunes      -   Mat: 
+  Murilo Torres    -   Mat: 
+  Thiago Andrade   -   Mat: 
+  Thiago Pereira   -   Mat: 
+  Vinícius Nunes   -   Mat: 
+
+# TÉCNOLOGIAS UTILIZADAS
+  JavaScript
+  Node.JS
+  Insominia
+  ...
+  ...
+  ...
+  ...
+
+
+
+# FERRAMENTAS NECESSÁRIAS
 * [Node](https://nodejs.org/pt) - para executar o servidor
 * [Insominia](https://insomnia.rest/download) - para testar rotas
 
