@@ -1,0 +1,43 @@
+..:::::: REQUISITOS FUNCIONAIS BACK-END ::::::..
+
+RF 01 - Registro de Agendamento
+      O sistema back-end deve oferecer uma API que permita a criação de agendamentos, recebendo as informações do front-end e salvando no banco de dados.
+
+RF 02 - Seleção de Datas e Horários
+      O back-end deve buscar e retornar ao front-end uma lista de datas e horários disponíveis para o agendamento, verificando se já não há reservas no período solicitado.
+
+RF 03 - Dados Obrigatórios
+      O back-end deve validar e armazenar os dados obrigatórios dos agendamentos enviados pelo front-end:
+    
+    RF 03.1: Validar a presença de nome, e-mail e telefone de contato no momento do agendamento.
+    RF 03.2: Após a criação do agendamento, o back-end deve gerar e retornar ao front um número de protocolo com as informações de data e horário.
+    RF 03.3: Enviar automaticamente um e-mail para o usuário com a confirmação dos dados do agendamento.
+
+RF 04 - Autenticação para Administrativo
+      Implementar uma API de autenticação segura para login de usuários administrativos, permitindo acesso aos endpoints restritos.
+
+RF 05 - Disponibilização de Datas e Horários
+      O back-end deve permitir que o administrador gerencie datas e horários através de endpoints, com as seguintes operações:
+
+RF 05.1: Registrar a confirmação de atendimentos realizados.
+  RF 05.2: Registrar cancelamentos de atendimentos.
+  RF 05.3: Permitir a edição dos dados de agendamento por meio de uma API, para corrigir informações incorretas.
+  RF 05.4: Criar novos usuários administrativos, com permissões específicas.
+
+RF 06 - Registro de Comentários
+  O back-end deve permitir a inclusão e armazenamento de comentários, podendo ser acessados publicamente:
+    RF 06.1: Criar uma API para exibir comentários de maneira pública.
+    RF 06.2: Disponibilizar informações sobre o atendimento oferecido, retornando dados que o front pode usar para compor uma página explicativa.
+RF 07 - Canal de Suporte
+      O back-end deve oferecer um endpoint para envio de solicitações de suporte, registrando as mensagens e repassando-as para o canal adequado (e-mail ou sistema de atendimento).
+
+..:::::: REQUISITOS NÃO FUNCIONAIS BACK-END ::::::..
+
+RNF 01 - Ambiente Seguro
+        O sistema back-end deve garantir a segurança dos dados através de práticas como criptografia de dados sensíveis, autenticação JWT para sessões administrativas e uso de HTTPS.
+
+RNF 02 - Estrutura Escalável e Modular
+        O back-end deve ser modular e organizado para que novos recursos e funcionalidades possam ser adicionados sem comprometer a estrutura.
+
+RNF 03 - Desempenho e Atualização em Tempo Real
+        As APIs do back-end devem oferecer respostas rápidas, garantindo o desempenho necessário para o uso fluido. As atualizações de dados no painel administrativo devem ser refletidas em tempo real, preferencialmente com WebSockets ou alguma tecnologia de atualização em tempo real.
