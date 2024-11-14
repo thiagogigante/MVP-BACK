@@ -1,29 +1,55 @@
-# MVP-BACK
-TRABALHO DA FACULDADE
+## 📑 Apresentação:
+Este projeto foi desenvolvido por alunos da Unifeso como ferramenta de avaliação da disciplina MVP Back-End Development do Curso de Tecnólogo em Análise e Desenvolvimento de Sistemas.
 
-# Equipe
-  Bruno Nunes      -   Mat: 
-  Murilo Torres    -   Mat: 
-  Thiago Andrade   -   Mat: 
-  Thiago Pereira   -   Mat: 
-  Vinícius Nunes   -   Mat: 
+Nele foi utilizado o conceito de MVP (Menor Produto Viável) onde o foco é a solução prática para desenvolvimento com rapidez e baixo custo. 
 
-# TÉCNOLOGIAS UTILIZADAS
+
+## 👨‍💻 Integrantes da Equipe:
+  Bruno Nunes      -   Mat. 06007464
+  Murilo Torres    -   Mat. 06007772
+  Thiago Andrade   -   Mat. 06007617
+  Thiago Pereira   -   Mat. 
+  Vinícius Nunes   -   Mat. 
+
+## 🤖 Técnologias utilizadas:
   JavaScript
-  Node.JS
-  Insominia
-  ...
-  ...
-  ...
-  ...
-
-
-
-# FERRAMENTAS NECESSÁRIAS
 * [Node](https://nodejs.org/pt) - para executar o servidor
 * [Insominia](https://insomnia.rest/download) - para testar rotas
+  ...
 
-## Rodando localmente
+
+## 🚀 Metodologias Ágeis aplicadas:
+    
+  Realizamos o levantamento dos Requisitos Funcionais e Não Funcionais com base nos requerimentos descritos pela instituição no enunciado do desafio e  nos Requisitos já levantados para o Front-End. Este levantamento está disponível no documento [REQUISITOS](REQUISITOS.xlsx).
+
+  Fizemos Sprints de reuniões semanais através do Método Scrum e uso da ferramenta Trelo para organizar e acompanhar as tarefas realizadas, aguandando e com dificuldade.
+
+    
+## ⚠️ Situação Problema (MVP DEFINIDO):
+  Desenvolver uma solução simplificada para o processo de agendamento do NAF (Núcleo de Apoio Fiscal), setor da Unifeso que oferece assistência à população para declarações de Imposto de Renda e demais serviços.
+
+
+## 🎯 Objetivos e Benefícios do Produto:
+
+  A solução deve possuir login para usuários e administradores. Os Usuário agendam o atendimento com base nas datas disponibilizadas pelos administradores(funcionários do NAF) e emitem um protocolo de confirmação. No ato do atendimento os administradores confirmam ou cancelam atendimento no sistema. Podendo também, o usuário deixar um comentário sobre a experiencia do serviço prestado.
+
+  Com esta ferramenta, intituição e comunidade terão facilidade no agendamento e gerenciamento dos atendimentos. Evitando filas no agendamento presencial.
+
+## 👥 Público-Alvo da Solução:
+
+  Cidadão, maior de idade, que deseje atendimento há algum serviço prestado pelo NAF.
+
+## 🆘 Dores do público-alvo:
+  Dificuldade no agendamento presencial, excesso de filas.
+
+
+## 💡 Prototipação:
+  
+  # Endpoints
+
+
+
+## 👨‍🏫 Instruções de Uso:
 
 Entre no diretório do projeto
 
