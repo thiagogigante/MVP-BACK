@@ -5,11 +5,11 @@ Nele foi utilizado o conceito de MVP (Menor Produto Viável) onde o foco é a so
 
 
 ## 👨‍💻 Integrantes da Equipe:
-  Bruno Nunes      -   Mat. 06007464
-  Murilo Torres    -   Mat. 06007772
-  Thiago Andrade   -   Mat. 06007617
-  Thiago Pereira   -   Mat. 
-  Vinícius Nunes   -   Mat. 
+  Bruno Nunes      -   Mat. 06007464 <br>
+  Murilo Torres    -   Mat. 06007772 <br>
+  Thiago Andrade   -   Mat. 06007617 <br>
+  Thiago Pereira   -   Mat. 06007579 <br>
+  Vinícius Nunes   -   Mat. 06007628 <br>
 
 ## 🤖 Técnologias utilizadas:
   JavaScript
@@ -44,10 +44,13 @@ Nele foi utilizado o conceito de MVP (Menor Produto Viável) onde o foco é a so
 
 
 ## 💡 Prototipação:
-  
-  # Endpoints
+A estrutura do Bando de Dados segue no formato NoSQL, representado no diagrama abaixo:
+<p align="center">
+  <img alt="Tabelas do Banco de Dados" src="./tabelas_bd.jpeg" width="50%">
+</p>
 
-
+## 🔚 Endpoints:
+  As operações CRUDs já estabelecidas podem ser conferidas [clicando aqui](https://documenter.getpostman.com/view/39755506/2sAY55be8V)
 
 ## 👨‍🏫 Instruções de Uso:
 
