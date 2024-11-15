@@ -12,10 +12,10 @@ Nele foi utilizado o conceito de MVP (Menor Produto Viável) onde o foco é a so
   Vinícius Nunes   -   Mat. 06007628 <br>
 
 ## 🤖 Técnologias utilizadas:
-  JavaScript
-* [Node](https://nodejs.org/pt) - para executar o servidor
-* [Insominia](https://insomnia.rest/download) - para testar rotas
-  ...
+* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - Linguagem base para a lógica do sistema e interações do usuário, facilitando uma experiência ágil e dinâmica
+* [Node.JS](https://nodejs.org/pt) - Backbone da aplicação, permitindo que o sistema funcione de forma rápida e escalável. Dá suporte para operações em tempo real.
+* [MongoDB](https://www.mongodb.com/pt-br) - Base de dados flexível e robusta para armazenar e organizar os dados, ideal para projetos que requerem grande velocidade de leitura e escrita.
+* [Insomnia](https://insomnia.rest/download) Ferramenta de testes para garantir a funcionalidade de cada endpoint da API, simulando requisições de maneira prática e rápida.
 
 
 ## 🚀 Metodologias Ágeis aplicadas:
