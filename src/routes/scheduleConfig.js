@@ -3,6 +3,7 @@ import scheduleConfigControllers from "../controllers/scheduleConfigControllers.
 import authController from "../controllers/authController.js";
 
 const router = Router();
+
 router.get(
     "/",
     authController.verifyToken,
@@ -11,12 +12,14 @@ router.get(
 
 router.post(
     "/new",
+    authController.verifyPermission("admin"),
     authController.verifyToken,
     scheduleConfigControllers.addScheduleConfig
 );
 
 router.put(
     "/update",
+    authController.verifyPermission("admin"),
     authController.verifyToken,
     scheduleConfigControllers.updateScheduleConfig
 );

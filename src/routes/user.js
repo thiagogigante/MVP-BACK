@@ -4,9 +4,19 @@ import userController from "../controllers/userController.js";
 
 const router = Router();
 
-router.get("/", authController.verifyToken, userController.getUsers);
+router.get(
+    "/",
+    authController.verifyPermission("admin"),
+    authController.verifyToken,
+    userController.getUsers
+);
 
 router.post("/login", authController.login);
-router.post("/register", userController.registerUser);
+router.post(
+    "/register",
+    authController.verifyPermission("admin"),
+    authController.verifyToken,
+    userController.registerUser
+);
 
 export default router;

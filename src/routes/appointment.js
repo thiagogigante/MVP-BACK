@@ -12,7 +12,7 @@ router.get(
 
 router.post(
     "/new",
-    authController.verifyToken,
+    // authController.verifyToken,
     appointmentController.newAppointment
 );
 
