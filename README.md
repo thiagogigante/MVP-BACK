@@ -20,10 +20,9 @@ Nele foi utilizado o conceito de MVP (Menor Produto Viável) onde o foco é a so
 
 ## 🚀 Metodologias Ágeis aplicadas:
     
-  Realizamos o levantamento dos Requisitos Funcionais e Não Funcionais com base nos requerimentos descritos pela instituição no enunciado do desafio e  nos Requisitos já levantados para o Front-End. Este levantamento está disponível no documento [REQUISITOS](REQUISITOS.xlsx).
+  Realizamos o levantamento dos Requisitos Funcionais e Não Funcionais com base nos requerimentos descritos pela instituição no enunciado do desafio e na documentação de Requisitos já levantados para o MVP Front-End(trabalho realizado anteriormente dentro da mesma situação-problema). Este levantamento está disponível no documento [REQUISITOS](docs/REQUISITOS.xlsx).
 
-  Fizemos Sprints de reuniões semanais através do Método Scrum e uso da ferramenta Trelo para organizar e acompanhar as tarefas realizadas, aguandando e com dificuldade.
-
+  Fizemos Sprints de reuniões semanais com do Método Scrum através do Discord e usamos as ferramentas Trello e Google Agenda para organizar as reuniões e acompanhar as realização das tarefas.
     
 ## ⚠️ Situação Problema (MVP DEFINIDO):
   Desenvolver uma solução simplificada para o processo de agendamento do NAF (Núcleo de Apoio Fiscal), setor da Unifeso que oferece assistência à população para declarações de Imposto de Renda e demais serviços.
@@ -37,7 +36,7 @@ Nele foi utilizado o conceito de MVP (Menor Produto Viável) onde o foco é a so
 
 ## 👥 Público-Alvo da Solução:
 
-  Cidadão, maior de idade, que deseje atendimento há algum serviço prestado pelo NAF.
+  Cidadão, maior 18 anos, que deseje atendimento há algum serviço prestado pelo NAF.
 
 ## 🆘 Dores do público-alvo:
   Dificuldade no agendamento presencial, excesso de filas.
