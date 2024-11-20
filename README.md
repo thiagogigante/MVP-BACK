@@ -46,7 +46,7 @@ Nele foi utilizado o conceito de MVP (Menor Produto Viável) onde o foco é a so
 ## 💡 Prototipação:
 A estrutura do Bando de Dados segue no formato NoSQL, representado no diagrama abaixo:
 <p align="center">
-  <img alt="Tabelas do Banco de Dados" src="./tabelas_bd.png" width="50%">
+  <img alt="Tabelas do Banco de Dados" src="./docs/tabelas_bd.png" width="50%">
 </p>
 
 ## 🔚 Endpoints:
