@@ -20,11 +20,19 @@ Vinícius Nunes - Mat. 06007628 <br>
 -   [Insomnia](https://insomnia.rest/download) Ferramenta de testes para garantir a funcionalidade de cada endpoint da API, simulando requisições de maneira prática e rápida.
 
 ## 🚀 Metodologias Ágeis aplicadas:
+<<<<<<< HEAD
 
 Realizamos o levantamento dos Requisitos Funcionais e Não Funcionais com base nos requerimentos descritos pela instituição no enunciado do desafio e nos Requisitos já levantados para o Front-End. Este levantamento está disponível no documento [REQUISITOS](REQUISITOS.xlsx).
 
 Fizemos Sprints de reuniões semanais através do Método Scrum e uso da ferramenta Trelo para organizar e acompanhar as tarefas realizadas, aguandando e com dificuldade.
 
+=======
+    
+  Realizamos o levantamento dos Requisitos Funcionais e Não Funcionais com base nos requerimentos descritos pela instituição no enunciado do desafio e na documentação de Requisitos já levantados para o MVP Front-End(trabalho realizado anteriormente dentro da mesma situação-problema). Este levantamento está disponível no documento [REQUISITOS](docs/REQUISITOS.xlsx).
+
+  Fizemos Sprints de reuniões semanais com do Método Scrum através do Discord e usamos as ferramentas Trello e Google Agenda para organizar as reuniões e acompanhar as realização das tarefas.
+    
+>>>>>>> 81ea920380741a2f367aac069928ead0c2035493
 ## ⚠️ Situação Problema (MVP DEFINIDO):
 
 Desenvolver uma solução simplificada para o processo de agendamento do NAF (Núcleo de Apoio Fiscal), setor da Unifeso que oferece assistência à população para declarações de Imposto de Renda e demais serviços.
@@ -37,7 +45,11 @@ Com esta ferramenta, intituição e comunidade terão facilidade no agendamento 
 
 ## 👥 Público-Alvo da Solução:
 
+<<<<<<< HEAD
 Cidadão, maior de idade, que deseje atendimento há algum serviço prestado pelo NAF.
+=======
+  Cidadão, maior 18 anos, que deseje atendimento há algum serviço prestado pelo NAF.
+>>>>>>> 81ea920380741a2f367aac069928ead0c2035493
 
 ## 🆘 Dores do público-alvo:
 
@@ -61,7 +73,11 @@ Dificuldade no agendamento presencial, excesso de filas.
     A estrutura do Bando de Dados segue no formato NoSQL, representado no diagrama abaixo:
 
 <p align="center">
+<<<<<<< HEAD
   <img alt="Tabelas do Banco de Dados" src="./docs/images/tabelas_bd.png" width="50%">
+=======
+  <img alt="Tabelas do Banco de Dados" src="./docs/tabelas_bd.png" width="50%">
+>>>>>>> 81ea920380741a2f367aac069928ead0c2035493
 </p>
 
 
