@@ -57,7 +57,7 @@ Dificuldade no agendamento presencial, excesso de filas.
 
     A documentação da API pode ser acessada no link abaixo:
 
-    -   [SwaggerHub](https://app.swaggerhub.com/apis-docs/BRUNONUNES72/mvp-back_end/1.0.0#/)
+    -   [Swagger](https://nu7nes.github.io/mvp-back-end-docs/)
 
 -   ### Banco de Dados
     A estrutura do Bando de Dados segue no formato NoSQL, representado no diagrama abaixo:
