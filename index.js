@@ -6,9 +6,7 @@ import express from "express";
 const app = express();
 // console.log(process.env.JWT_SECRET);
 
-mongoose.connect(
-    "mongodb+srv://brunonunes72:seEnurx9hH4qNCZ1@cluster0.yridb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-);
+mongoose.connect(process.env.MONGO_CONNECT_URI);
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));

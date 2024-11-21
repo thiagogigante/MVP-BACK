@@ -71,7 +71,13 @@ Dificuldade no agendamento presencial, excesso de filas.
 ### JSON Web Token
 
 ```bash
-  JWT_SECRET = Chave secreta que é usada para gerar e validar os tokens JSON Web Token (JWT).
+  JWT_SECRET = 'Chave secreta que é usada para gerar e validar os tokens JSON Web Token (JWT).'
+```
+
+### MongoDB
+
+```bash
+  MONGO_CONNECT_URI = 'Endereço de conexão com banco de dados.'
 ```
 
 ### Credenciais do servidor SMTP
