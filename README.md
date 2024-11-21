@@ -15,16 +15,17 @@ Vinícius Nunes - Mat. 06007628 <br>
 ## 🤖 Técnologias utilizadas:
 
 -   [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - Linguagem base para a lógica do sistema e interações do usuário, facilitando uma experiência ágil e dinâmica
--   [Node.JS](https://nodejs.org/pt) - Backbone da aplicação, permitindo que o sistema funcione de forma rápida e escalável. Dá suporte para operações em tempo real.
+-   [Node.JS](https://nodejs.org/pt) - Ambiente de execução JavaScript baseado no V8, usado para construir aplicações escaláveis e de alto desempenho, especialmente no lado do servidor.
 -   [MongoDB](https://www.mongodb.com/pt-br) - Base de dados flexível e robusta para armazenar e organizar os dados, ideal para projetos que requerem grande velocidade de leitura e escrita.
+-   [Swagger](https://swagger.io/tools/swaggerhub) - Plataforma colaborativa para design, documentação e gerenciamento de APIs, integrando ferramentas como Swagger Editor e Swagger UI para simplificar o desenvolvimento.
 -   [Insomnia](https://insomnia.rest/download) Ferramenta de testes para garantir a funcionalidade de cada endpoint da API, simulando requisições de maneira prática e rápida.
 
 ## 🚀 Metodologias Ágeis aplicadas:
-    
-  Realizamos o levantamento dos Requisitos Funcionais e Não Funcionais com base nos requerimentos descritos pela instituição no enunciado do desafio e na documentação de Requisitos já levantados para o MVP Front-End(trabalho realizado anteriormente dentro da mesma situação-problema). Este levantamento está disponível no documento [REQUISITOS](docs/REQUISITOS.xlsx).
 
-  Fizemos Sprints de reuniões semanais com do Método Scrum através do Discord e usamos as ferramentas Trello e Google Agenda para organizar as reuniões e acompanhar as realização das tarefas.
-    
+Realizamos o levantamento dos Requisitos Funcionais e Não Funcionais com base nos requerimentos descritos pela instituição no enunciado do desafio e na documentação de Requisitos já levantados para o MVP Front-End(trabalho realizado anteriormente dentro da mesma situação-problema). Este levantamento está disponível no documento [REQUISITOS](docs/REQUISITOS.xlsx).
+
+Fizemos Sprints de reuniões semanais com do Método Scrum através do Discord e usamos as ferramentas Trello e Google Agenda para organizar as reuniões e acompanhar as realização das tarefas.
+
 ## ⚠️ Situação Problema (MVP DEFINIDO):
 
 Desenvolver uma solução simplificada para o processo de agendamento do NAF (Núcleo de Apoio Fiscal), setor da Unifeso que oferece assistência à população para declarações de Imposto de Renda e demais serviços.
@@ -52,10 +53,11 @@ Dificuldade no agendamento presencial, excesso de filas.
     -   [Agendamento](https://github.com/thiagogigante/MVP-BACK/blob/main/docs/images/fluxo-agendamento.jpeg)
     -   [Administrativo](https://github.com/thiagogigante/MVP-BACK/blob/main/docs/images/fluxo-administracao.jpeg)
 
-- ### Endpoints:
+-   ### Endpoints:
 
-  A documentação da API pode ser acessada no link abaixo:
-  - [SwaggerHub](https://app.swaggerhub.com/apis-docs/BRUNONUNES72/mvp-back_end/1.0.0#/)
+    A documentação da API pode ser acessada no link abaixo:
+
+    -   [SwaggerHub](https://app.swaggerhub.com/apis-docs/BRUNONUNES72/mvp-back_end/1.0.0#/)
 
 -   ### Banco de Dados
     A estrutura do Bando de Dados segue no formato NoSQL, representado no diagrama abaixo:
@@ -63,8 +65,6 @@ Dificuldade no agendamento presencial, excesso de filas.
 <p align="center">
   <img alt="Tabelas do Banco de Dados" src="./docs/images/tabelas_bd.png" width="50%">
 </p>
-
-
 
 ## 🔐 Variáveis de ambiente:
 

@@ -28,18 +28,9 @@ async function registerUser(req, res) {
         const hashedPassword = await bcrypt.hash(password, saltRounds);
 
         const user = new User({ ...req.body, password: hashedPassword });
-        // console.log(user);
         await user.save();
 
-        const userDataToEncode = {
-            name: user.name,
-            email: user.email,
-            role: user.role,
-        };
-
-        const code = jwt.sign(userDataToEncode, SECRET);
-
-        res.status(200).send(JSON.stringify(code));
+        res.status(200).send("Usuário criado com sucesso!");
     } catch (err) {
         res.status(500).send(err.message);
     }
