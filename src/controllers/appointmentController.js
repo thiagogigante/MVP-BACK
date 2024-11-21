@@ -10,14 +10,22 @@ async function getAppointment(req, res) {
     }
 }
 
-async function newAppointment(req, res) {
+async function newAppointment(req, res, next) {
     try {
         const { body } = req;
+
+        const finded = await Appointment.find({
+            time: body.time,
+            date: body.date,
+        });
+
+        if (finded.length > 0)
+            return res.status(409).send("Data e horário não disponível!");
 
         const appointment = new Appointment(body);
         await appointment.save();
 
-        res.send(JSON.stringify(body));
+        next();
     } catch (err) {
         res.send(err);
     }

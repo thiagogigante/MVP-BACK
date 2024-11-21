@@ -4,14 +4,14 @@ const AppointmentSchema = new mongoose.Schema({
     name: { type: String, required: true },
     email: { type: String, required: true },
     phoneNumber: { type: String },
-    date: { type: Date, required: true },
-    time: { type: String, required: true }, // "10:00 AM - 11:00 AM"
+    date: { type: String, required: true },
+    time: { type: String, required: true },
     status: {
         type: String,
         enum: ["aguardando", "confirmado", "concluido", "cancelado"],
         default: "aguardando",
     },
-    feedback: { type: String }, // Feedback do usuário
+    feedback: { type: String },
     createdAt: { type: Date, default: Date.now },
 });
 

@@ -41,6 +41,7 @@ async function verifyToken(req, res, next) {
 
     try {
         jwt.verify(token, SECRET);
+        req.body = req.body;
         next();
     } catch (err) {
         res.status(401).send("Token inválido!");
@@ -67,6 +68,7 @@ function verifyPermission(requiredRole) {
             return res.status(403).json({ message: "Acesso negado" });
         }
 
+        req.body = req.body;
         next();
     };
 }

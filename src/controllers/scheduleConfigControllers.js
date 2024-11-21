@@ -27,16 +27,26 @@ async function updateScheduleConfig(req, res) {
     try {
         const { body } = req;
 
+        if (!body.dayOfWeek) return res.status(400).send("Dia não fornecido.");
+        
         const query = { dayOfWeek: body.dayOfWeek };
         const dataToUpdate = {
+            isOpen: body.isOpen,
             timeSlots: {
                 start: body.hour_start,
                 end: body.hour_finish,
             },
         };
-        await ScheduleConfig.findOneAndUpdate(query, dataToUpdate);
 
-        res.send(JSON.stringify({ ...query, ...dataToUpdate }));
+        const updatedDoc = await ScheduleConfig.findOneAndUpdate(
+            query,
+            dataToUpdate,
+            {
+                new: true,
+            }
+        );
+
+        res.json(updatedDoc);
     } catch (err) {
         res.send(err);
     }

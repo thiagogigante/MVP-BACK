@@ -12,15 +12,15 @@ router.get(
 
 router.post(
     "/new",
-    authController.verifyPermission("admin"),
     authController.verifyToken,
+    authController.verifyPermission("admin"),
     scheduleConfigControllers.addScheduleConfig
 );
 
 router.put(
     "/update",
-    authController.verifyPermission("admin"),
     authController.verifyToken,
+    authController.verifyPermission("admin"),
     scheduleConfigControllers.updateScheduleConfig
 );
 

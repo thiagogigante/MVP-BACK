@@ -1,0 +1,197 @@
+openapi: 3.0.0
+info:
+  title: MVP-BACK-END
+  version: 1.0.0
+  description: |-
+    Este projeto foi desenvolvido por alunos da Unifeso como ferramenta de avaliação da disciplina MVP Back-End Development do Curso de Tecnólogo em Análise e Desenvolvimento de Sistemas. Nele foi utilizado o conceito de MVP (Menor Produto Viável) onde o foco é a solução prática com desenvolvimento rápido e baixo custo.
+
+    Links úteis:
+    - [Repositório](https://github.com/thiagogigante/MVP-BACK/)
+
+    Alunos:
+    - Bruno Nunes - Mat. 06007464
+    - Murilo Torres - Mat. 06007772
+    - Thiago Andrade - Mat. 06007617
+    - Thiago Pereira - Mat. 06007579
+    - Vinícius Nunes - Mat. 06007628
+
+
+paths:
+  /user/login:
+    post:
+      summary: "Login do usuário"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: string
+                example: "Token JWT válido"
+        '401':
+          description: "Não autorizado"
+  /user:
+    get:
+      summary: "Listagem de usuários"
+      parameters:
+        - name: authorization
+          in: header
+          required: true
+          schema:
+            type: string
+            example: 'Token JWT válido'
+      responses:
+        '200':
+          description: "Ok"
+        '401':
+          description: "Não autorizado"
+  /user/register:
+    post:
+      summary: Register User
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: Higor
+                email:
+                  type: string
+                  example: higor@gmail.com
+                password:
+                  type: string
+                  example: 12345678
+                role:
+                  type: string
+                  example: admin
+      responses:
+        '200':
+          description: User registered successfully
+        '401':
+          description: "Não autorizado"
+  /scheduleConfig:
+    get:
+      summary: Get ScheduleConfig
+      parameters:
+        - name: authorization
+          in: header
+          required: true
+          schema:
+            type: string
+            example: '{{AUTH_TOKEN}}'
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: "Não autorizado"
+  /scheduleConfig/new:
+    post:
+      summary: New ScheduleConfig
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                dayOfWeek:
+                  type: string
+                  example: sabado
+                isOpen:
+                  type: boolean
+                  example: true
+                timeSlots:
+                  type: object
+                  properties:
+                    start:
+                      type: string
+                      example: "09:00"
+                    end:
+                      type: string
+                      example: "12:00"
+      responses:
+        '200':
+          description: Success
+        '401':
+          description: "Não autorizado"
+  /scheduleConfig/update:
+    put:
+      summary: Update ScheduleConfig
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                dayOfWeek:
+                  type: string
+                  example: terca
+                hour_start:
+                  type: string
+                  example: "08:00"
+                hour_finish:
+                  type: string
+                  example: "12:00"
+      responses:
+        '200':
+          description: Success
+        '401':
+          description: "Não autorizado"
+  /appointment/new:
+    post:
+      summary: New Appointment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: Bruno
+                email:
+                  type: string
+                  example: bruno@teste.com
+                phoneNumber:
+                  type: string
+                  example: 21987654321
+                date:
+                  type: string
+                  example: "11/11/2024"
+                time:
+                  type: string
+                  example: "16:00"
+      responses:
+        '200':
+          description: Success
+  /appointment:
+    get:
+      summary: Get Appointment
+      parameters:
+        - name: authorization
+          in: header
+          required: true
+          schema:
+            type: string
+            example: '{{AUTH_TOKEN}}'
+      responses:
+        '200':
+          description: Success
+        '401':
+          description: "Não autorizado"
