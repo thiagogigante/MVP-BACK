@@ -84,13 +84,15 @@ Dificuldade no agendamento presencial, excesso de filas.
 
 ```bash
   MAIL_FROM = 'Domínio que assinará os E-mails enviados pela API.'
-  MAIL_PORT = 'Porta de conexão do servidor SMTP'
   MAIL_HOST = 'Host de conexão do servidor SMTP'
+  MAIL_PORT = 'Porta de conexão do servidor SMTP'
   MAIL_USER = 'Nome de usuario de conexão do servidor SMTP'
   MAIL_PASS = 'Senha de conexão do servidor SMTP'
 ```
 
 ## 👨‍🏫 Instruções de Uso:
+
+Certifique-se de ter o **Node.js** instalado no seu ambinte.
 
 Entre no diretório do projeto
 
